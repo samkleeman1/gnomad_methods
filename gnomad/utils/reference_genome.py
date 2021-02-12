@@ -96,13 +96,13 @@ def add_reference_sequence(ref: hl.ReferenceGenome) -> hl.ReferenceGenome:
     if not ref.has_sequence():
         if ref.name == "GRCh38":
             ref.add_sequence(
-                "gs://hail-common/references/Homo_sapiens_assembly38.fasta.gz",
-                "gs://hail-common/references/Homo_sapiens_assembly38.fasta.fai",
+                "references/Homo_sapiens_assembly38.fasta.gz",
+                "references/Homo_sapiens_assembly38.fasta.fai",
             )
         elif ref.name == "GRCh37":
             ref.add_sequence(
-                "gs://hail-common/references/human_g1k_v37.fasta.gz",
-                "gs://hail-common/references/human_g1k_v37.fasta.fai",
+                "references/human_g1k_v37.fasta.gz",
+                "references/human_g1k_v37.fasta.fai",
             )
         else:
             raise NotImplementedError(
