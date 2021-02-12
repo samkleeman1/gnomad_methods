@@ -19,7 +19,7 @@ def _import_purcell_5k(path) -> hl.Table:
     rg38 = hl.get_reference("GRCh38")
     if not rg37.has_liftover("GRCh38"):
         rg37.add_liftover(
-            "gs://hail-common/references/grch37_to_grch38.over.chain.gz", rg38
+            "references/grch37_to_grch38.over.chain.gz", rg38
         )
     p5k = p5k.annotate(
         start=hl.liftover(p5k.interval.start, "GRCh38"),
