@@ -13,12 +13,12 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
 
-GRCH37_to_GRCH38_CHAIN = "gs://hail-common/references/grch37_to_grch38.over.chain.gz"
+GRCH37_to_GRCH38_CHAIN = "references/grch37_to_grch38.over.chain.gz"
 """
 Path to chain file required to lift data from GRCh37 to GRCh38.
 """
 
-GRCH38_TO_GRCH37_CHAIN = "gs://hail-common/references/grch38_to_grch37.over.chain.gz"
+GRCH38_TO_GRCH37_CHAIN = "references/grch38_to_grch37.over.chain.gz"
 """
 Path to chain file required to lift data from GRCh38 to GRCh37.
 """
